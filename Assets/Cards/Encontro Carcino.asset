@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Encontro Carcino
+  m_EditorClassIdentifier: 
+  decisao: "Um carcinus desertor oferece armas e informa\xE7\xF5es. Diz que quer
+    se aliar.\r"
+  textoEscolhaEsquerda: Aceitar ajuda dele
+  textoResultadoEsquerda: "Voc\xEA ganha recursos. Mas o grupo fica com desconfian\xE7a
+    em rela\xE7\xE3o ao carcino."
+  textoEscolhaDireita: Atacar o carcinus
+  textoResultadoDireita: O ataque foi cansativo. Mas a moral do grupo sobe depois
+    de um gesto de firmeza.
+  valoresEscolhaEsquerda: 0a0000001e000000ecffffff00000000
+  valoresEscolhaDireita: 00000000f6ffffff14000000f6ffffff

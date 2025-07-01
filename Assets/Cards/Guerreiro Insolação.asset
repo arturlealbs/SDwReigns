@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: "Guerreiro Insola\xE7\xE3o"
+  m_EditorClassIdentifier: 
+  decisao: "Um guerreiro seu desmaia de insola\xE7\xE3o. Voc\xEAs precisam decidir
+    se param ou continuam.\r"
+  textoEscolhaEsquerda: "Parar e proteg\xEA-lo"
+  textoResultadoEsquerda: "Voc\xEA salva o guerreiro, mas a miss\xE3o atrasa."
+  textoEscolhaDireita: "Seguir e deix\xE1-lo para tr\xE1s"
+  textoResultadoDireita: "A tropa avan\xE7a, mas o abandono gera desconforto moral."
+  valoresEscolhaEsquerda: f1ffffff000000000f000000ecffffff
+  valoresEscolhaDireita: 0000000000000000e2ffffff00000000

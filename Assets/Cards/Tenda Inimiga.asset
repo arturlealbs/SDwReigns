@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Tenda Inimiga
+  m_EditorClassIdentifier: 
+  decisao: "Ele traz suprimentos, mas sua confian\xE7a \xE9 colocada em xeque."
+  textoEscolhaEsquerda: Deixar ele tentar
+  textoResultadoEsquerda: A carne sacia a fome, mas muitos saem feridos e exaustos.
+  textoEscolhaDireita: Atacar com tudo
+  textoResultadoDireita: "A vit\xF3ria vem com perdas. O grupo aplaude sua coragem."
+  valoresEscolhaEsquerda: 0f00000000000000f6ffffff00000000
+  valoresEscolhaDireita: 0f000000ecffffff15000000ecffffff
