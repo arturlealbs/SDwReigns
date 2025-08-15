@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 15
+  m_EditorClassIdentifier: 
+  decisao: "Durante a noite, uma rajada de luzes verdes brilha sobre a cidade. Alguns
+    dizem que \xE9 uma nova arma dos carcinus, outros acham que \xE9 s\xF3 um fen\xF4meno
+    natural. Investigar consome energia, mas ignorar pode ser perigoso.\r"
+  textoEscolhaEsquerda: "Investigo o fen\xF4meno."
+  textoResultadoEsquerda: "Voc\xEA gasta energia preciosa em sua investiga\xE7\xE3o."
+  textoEscolhaDireita: Ignoro e sigo o plano.
+  textoResultadoDireita: "Voc\xEA economiza energia e mant\xE9m o foco, mas a moral
+    do grupo pode ser afetada pela incerteza. "
+  valoresEscolhaEsquerda: 000000000000000000000000f6ffffff
+  valoresEscolhaDireita: 0000000000000000f6ffffff00000000

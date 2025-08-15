@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: 43152aad1600c5d49b7374e5f75800ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5308964669903121074
+    second: Carcinus_Atlas_Upscaled_upscaled_0
+  - first:
+      213: 6008716382790341843
+    second: Carcinus_Atlas_Upscaled_upscaled_1
+  - first:
+      213: -5211756091903853372
+    second: Carcinus_Atlas_Upscaled_upscaled_2
+  - first:
+      213: -1663672791250238810
+    second: Carcinus_Atlas_Upscaled_upscaled_3
+  - first:
+      213: -5087058588822223519
+    second: Carcinus_Atlas_Upscaled_upscaled_4
+  - first:
+      213: -6843684105250125218
+    second: Carcinus_Atlas_Upscaled_upscaled_5
+  - first:
+      213: 8817495545205092882
+    second: Carcinus_Atlas_Upscaled_upscaled_6
+  - first:
+      213: 5934247163310170288
+    second: Carcinus_Atlas_Upscaled_upscaled_7
+  - first:
+      213: -4061826664763291818
+    second: Carcinus_Atlas_Upscaled_upscaled_8
+  - first:
+      213: -103042156503972038
+    second: Carcinus_Atlas_Upscaled_upscaled_9
+  - first:
+      213: -3015293796696607971
+    second: Carcinus_Atlas_Upscaled_upscaled_10
+  - first:
+      213: -4956169441562222832
+    second: Carcinus_Atlas_Upscaled_upscaled_11
+  - first:
+      213: -1918895151554525541
+    second: Carcinus_Atlas_Upscaled_upscaled_12
+  - first:
+      213: 3511250345349342275
+    second: Carcinus_Atlas_Upscaled_upscaled_13
+  - first:
+      213: -4520988134867546743
+    second: Carcinus_Atlas_Upscaled_upscaled_14
+  - first:
+      213: -7708936482484743916
+    second: Carcinus_Atlas_Upscaled_upscaled_15
+  - first:
+      213: 4440128554251073088
+    second: Carcinus_Atlas_Upscaled_upscaled_16
+  - first:
+      213: -1090349624460428974
+    second: Carcinus_Atlas_Upscaled_upscaled_17
+  - first:
+      213: 981651104580574492
+    second: Carcinus_Atlas_Upscaled_upscaled_18
+  - first:
+      213: 2681619456772279520
+    second: Carcinus_Atlas_Upscaled_upscaled_19
+  - first:
+      213: 661304719061420397
+    second: Carcinus_Atlas_Upscaled_upscaled_20
+  - first:
+      213: -2901680855942917870
+    second: Carcinus_Atlas_Upscaled_upscaled_21
+  - first:
+      213: -6427546839987850836
+    second: Carcinus_Atlas_Upscaled_upscaled_22
+  - first:
+      213: 2937906363614787037
+    second: Carcinus_Atlas_Upscaled_upscaled_23
+  - first:
+      213: 1171011471279171729
+    second: Carcinus_Atlas_Upscaled_upscaled_24
+  - first:
+      213: -2258000409418761634
+    second: Carcinus_Atlas_Upscaled_upscaled_25
+  - first:
+      213: 2285903157061235605
+    second: Carcinus_Atlas_Upscaled_upscaled_26
+  - first:
+      213: -1782831121894744598
+    second: Carcinus_Atlas_Upscaled_upscaled_27
+  - first:
+      213: 1733910918410800078
+    second: Carcinus_Atlas_Upscaled_upscaled_28
+  - first:
+      213: -6268122688453512821
+    second: Carcinus_Atlas_Upscaled_upscaled_29
+  - first:
+      213: -3398235214728547812
+    second: Carcinus_Atlas_Upscaled_upscaled_30
+  - first:
+      213: -4224791462301852550
+    second: Carcinus_Atlas_Upscaled_upscaled_31
+  - first:
+      213: 8743641134476765457
+    second: Carcinus_Atlas_Upscaled_upscaled_32
+  - first:
+      213: 3534721712423851355
+    second: Carcinus_Atlas_Upscaled_upscaled_33
+  - first:
+      213: -2923707608806792979
+    second: Carcinus_Atlas_Upscaled_upscaled_34
+  - first:
+      213: -1315439698876796146
+    second: Carcinus_Atlas_Upscaled_upscaled_35
+  - first:
+      213: -8185467748770687265
+    second: Carcinus_Atlas_Upscaled_upscaled_36
+  - first:
+      213: -61772930544381754
+    second: Carcinus_Atlas_Upscaled_upscaled_37
+  - first:
+      213: -6167606759573025926
+    second: Carcinus_Atlas_Upscaled_upscaled_38
+  - first:
+      213: -1019906818107418536
+    second: Carcinus_Atlas_Upscaled_upscaled_39
+  - first:
+      213: 1538650100988170563
+    second: Carcinus_Atlas_Upscaled_upscaled_40
+  - first:
+      213: 4213290525080575680
+    second: Carcinus_Atlas_Upscaled_upscaled_41
+  - first:
+      213: 4945037179168758989
+    second: Carcinus_Atlas_Upscaled_upscaled_42
+  - first:
+      213: -4115696022279301244
+    second: Carcinus_Atlas_Upscaled_upscaled_43
+  - first:
+      213: -3715895169791773377
+    second: Carcinus_Atlas_Upscaled_upscaled_44
+  - first:
+      213: -6495093668880938084
+    second: Carcinus_Atlas_Upscaled_upscaled_45
+  - first:
+      213: -6250393826658995980
+    second: Carcinus_Atlas_Upscaled_upscaled_46
+  - first:
+      213: 4855021281885250105
+    second: Carcinus_Atlas_Upscaled_upscaled_47
+  - first:
+      213: -3556773150326607503
+    second: Carcinus_Atlas_Upscaled_upscaled_48
+  - first:
+      213: -373300623279609335
+    second: Carcinus_Atlas_Upscaled_upscaled_49
+  - first:
+      213: -177826115723341247
+    second: Carcinus_Atlas_Upscaled_upscaled_50
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_11
+      rect:
+        serializedVersion: 2
+        x: 3213
+        y: 1598
+        width: 778
+        height: 540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f990dd626283bb0800000000000000
+      internalID: -4956169441562222832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_16
+      rect:
+        serializedVersion: 2
+        x: 3593
+        y: 46
+        width: 314
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046343135618e9d30800000000000000
+      internalID: 4440128554251073088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_21
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 141
+        width: 313
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21198f1a2a82bb7d0800000000000000
+      internalID: -2901680855942917870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_25
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 982
+        width: 1490
+        height: 468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a78ed4798f9a0e0800000000000000
+      internalID: -2258000409418761634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_28
+      rect:
+        serializedVersion: 2
+        x: 2571
+        y: 650
+        width: 1384
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb0c0c2bc6101810800000000000000
+      internalID: 1733910918410800078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_29
+      rect:
+        serializedVersion: 2
+        x: 2602
+        y: 372
+        width: 1339
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b817922ff972309a0800000000000000
+      internalID: -6268122688453512821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_32
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 150
+        width: 338
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1192bf73947a75970800000000000000
+      internalID: 8743641134476765457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_33
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 55
+        width: 374
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5552e07baadd0130800000000000000
+      internalID: 3534721712423851355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_37
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 224
+        width: 323
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0da22d8d9842ff0800000000000000
+      internalID: -61772930544381754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_39
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 278
+        width: 345
+        height: 198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85855b2172098d1f0800000000000000
+      internalID: -1019906818107418536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_41
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 60
+        width: 299
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce52fad86d987a30800000000000000
+      internalID: 4213290525080575680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_45
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 17
+        width: 255
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b867b78baccd5a0800000000000000
+      internalID: -6495093668880938084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_46
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 16
+        width: 151
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f032bf3ee32249a0800000000000000
+      internalID: -6250393826658995980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_47
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 56
+        width: 314
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9326bb30220806340800000000000000
+      internalID: 4855021281885250105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Carcinus_Atlas_Upscaled_upscaled_49
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 56
+        width: 274
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90aacfa9f05c1daf0800000000000000
+      internalID: -373300623279609335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ab1f2e04d1564d742a61e262b612cb8f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Carcinus_Atlas_Upscaled_upscaled_0: 5308964669903121074
+      Carcinus_Atlas_Upscaled_upscaled_1: 6008716382790341843
+      Carcinus_Atlas_Upscaled_upscaled_10: -3015293796696607971
+      Carcinus_Atlas_Upscaled_upscaled_11: -4956169441562222832
+      Carcinus_Atlas_Upscaled_upscaled_12: -1918895151554525541
+      Carcinus_Atlas_Upscaled_upscaled_13: 3511250345349342275
+      Carcinus_Atlas_Upscaled_upscaled_14: -4520988134867546743
+      Carcinus_Atlas_Upscaled_upscaled_15: -7708936482484743916
+      Carcinus_Atlas_Upscaled_upscaled_16: 4440128554251073088
+      Carcinus_Atlas_Upscaled_upscaled_17: -1090349624460428974
+      Carcinus_Atlas_Upscaled_upscaled_18: 981651104580574492
+      Carcinus_Atlas_Upscaled_upscaled_19: 2681619456772279520
+      Carcinus_Atlas_Upscaled_upscaled_2: -5211756091903853372
+      Carcinus_Atlas_Upscaled_upscaled_20: 661304719061420397
+      Carcinus_Atlas_Upscaled_upscaled_21: -2901680855942917870
+      Carcinus_Atlas_Upscaled_upscaled_22: -6427546839987850836
+      Carcinus_Atlas_Upscaled_upscaled_23: 2937906363614787037
+      Carcinus_Atlas_Upscaled_upscaled_24: 1171011471279171729
+      Carcinus_Atlas_Upscaled_upscaled_25: -2258000409418761634
+      Carcinus_Atlas_Upscaled_upscaled_26: 2285903157061235605
+      Carcinus_Atlas_Upscaled_upscaled_27: -1782831121894744598
+      Carcinus_Atlas_Upscaled_upscaled_28: 1733910918410800078
+      Carcinus_Atlas_Upscaled_upscaled_29: -6268122688453512821
+      Carcinus_Atlas_Upscaled_upscaled_3: -1663672791250238810
+      Carcinus_Atlas_Upscaled_upscaled_30: -3398235214728547812
+      Carcinus_Atlas_Upscaled_upscaled_31: -4224791462301852550
+      Carcinus_Atlas_Upscaled_upscaled_32: 8743641134476765457
+      Carcinus_Atlas_Upscaled_upscaled_33: 3534721712423851355
+      Carcinus_Atlas_Upscaled_upscaled_34: -2923707608806792979
+      Carcinus_Atlas_Upscaled_upscaled_35: -1315439698876796146
+      Carcinus_Atlas_Upscaled_upscaled_36: -8185467748770687265
+      Carcinus_Atlas_Upscaled_upscaled_37: -61772930544381754
+      Carcinus_Atlas_Upscaled_upscaled_38: -6167606759573025926
+      Carcinus_Atlas_Upscaled_upscaled_39: -1019906818107418536
+      Carcinus_Atlas_Upscaled_upscaled_4: -5087058588822223519
+      Carcinus_Atlas_Upscaled_upscaled_40: 1538650100988170563
+      Carcinus_Atlas_Upscaled_upscaled_41: 4213290525080575680
+      Carcinus_Atlas_Upscaled_upscaled_42: 4945037179168758989
+      Carcinus_Atlas_Upscaled_upscaled_43: -4115696022279301244
+      Carcinus_Atlas_Upscaled_upscaled_44: -3715895169791773377
+      Carcinus_Atlas_Upscaled_upscaled_45: -6495093668880938084
+      Carcinus_Atlas_Upscaled_upscaled_46: -6250393826658995980
+      Carcinus_Atlas_Upscaled_upscaled_47: 4855021281885250105
+      Carcinus_Atlas_Upscaled_upscaled_48: -3556773150326607503
+      Carcinus_Atlas_Upscaled_upscaled_49: -373300623279609335
+      Carcinus_Atlas_Upscaled_upscaled_5: -6843684105250125218
+      Carcinus_Atlas_Upscaled_upscaled_50: -177826115723341247
+      Carcinus_Atlas_Upscaled_upscaled_6: 8817495545205092882
+      Carcinus_Atlas_Upscaled_upscaled_7: 5934247163310170288
+      Carcinus_Atlas_Upscaled_upscaled_8: -4061826664763291818
+      Carcinus_Atlas_Upscaled_upscaled_9: -103042156503972038
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 7
+  m_EditorClassIdentifier: 
+  decisao: "Um velho conhecido do submundo surge das sombras: um traficante de armas
+    desacreditado. Ele diz que foi abandonado pelos carcinus, que destru\xEDram seus
+    pontos de venda. Como sinal de boa-f\xE9, oferece uma proposta: trocar comida
+    por armamento. Diz que precisa sobreviver e s\xF3 quer manter o pouco que lhe
+    resta.\r\n"
+  textoEscolhaEsquerda: Troco parte dos alimentos por armas.
+  textoResultadoEsquerda: "Voc\xEA adquire armamentos valiosos, fortalecendo sua
+    capacidade militar. No entanto, seus estoques de comida diminuem, e a moral de
+    alguns pode cair ao ver recursos vitais sendo trocados com uma figura question\xE1vel"
+  textoEscolhaDireita: Rejeito a oferta e continuo com o que temos
+  textoResultadoDireita: "Seus recursos alimentares s\xE3o preservados, mantendo
+    a satisfa\xE7\xE3o do grupo. Contudo, voc\xEA perde a oportunidade de obter armas,
+    e a amea\xE7a dos carcinus continua sendo uma preocupa\xE7\xE3o."
+  valoresEscolhaEsquerda: ecffffff14000000f6ffffff00000000
+  valoresEscolhaDireita: 00000000f6ffffff0a00000000000000

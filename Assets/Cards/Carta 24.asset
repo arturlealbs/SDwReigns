@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 24
+  m_EditorClassIdentifier: 
+  decisao: "Aqui vai aparecer o texto da escolha. O l\xEDder deve ler em voz alta,
+    bem como as escolhas e os status afetados pelas escolhas. Para olhar uma escolha,
+    arraste (SEM SOLTAR) a carta para a direita ou esquerda. Quando quiser votar,
+    arraste e solte a carta."
+  textoEscolhaEsquerda: Escolha da Esquerda
+  textoResultadoEsquerda: Resultado da Carta Esquerda
+  textoEscolhaDireita: Escolha da Direita
+  textoResultadoDireita: Resultado da Carta Direita
+  valoresEscolhaEsquerda: 14000000ecffffff0a000000f6ffffff
+  valoresEscolhaDireita: 14000000ecffffff0a000000f6ffffff

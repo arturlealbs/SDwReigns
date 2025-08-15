@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 12
+  m_EditorClassIdentifier: 
+  decisao: "Ao se encontrar com um l\xEDder da resist\xEAncia humana no acampamento
+    do Marco Zero, voc\xEA descobre que existe um sistema de corrup\xE7\xE3o nos
+    n\xEDveis mais altos do escal\xE3o humano, gerando l\xEDderes violentos e totalitaristas
+    que atormentam esconderijos de humanos para pilhar. Voc\xEA pode relatar para
+    seu superior, correndo o risco de perder seu prest\xEDgio enquanto l\xEDder de
+    tropa, ou manter o sil\xEAncio. \r"
+  textoEscolhaEsquerda: "Delato a situa\xE7\xE3o para meu superior"
+  textoResultadoEsquerda: "Voc\xEA tenta limpar a corrup\xE7\xE3o de dentro, mas
+    a revela\xE7\xE3o pode ser mal interpretada. Sua moral do grupo cai um pouco,
+    pois sua imagem de l\xEDder forte pode ser questionada ao expor vulnerabilidades
+    internas da hierarquia humana."
+  textoEscolhaDireita: "Finjo que n\xE3o sei de nada"
+  textoResultadoDireita: "Voc\xEA mant\xE9m sua posi\xE7\xE3o e prest\xEDgio intactos,
+    mas a corrup\xE7\xE3o continua a corroer os humanos por dentro. A moral do grupo
+    n\xE3o \xE9 afetada diretamente, mas a injusti\xE7a persiste, e a confian\xE7a
+    no comando pode ser abalada se a verdade vier \xE0 tona. "
+  valoresEscolhaEsquerda: 0000000000000000f6ffffff00000000
+  valoresEscolhaDireita: 00000000000000000000000000000000
+  eventoEscolhaEsquerda: {fileID: 0}
+  eventoEscolhaDireita: {fileID: 11400000, guid: 87ed91e5ebb3b504fb0dccdf4bde62e0, type: 2}

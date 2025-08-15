@@ -9,10 +9,11 @@ public class CardsManager : MonoBehaviour
     public static CardsManager Instance { get; private set; }
 
     [Tooltip("Arraste todos os ScriptableObjects de cartas aqui. Este é o deck mestre.")]
+    [SerializeField] private CardData tutorialCard;
     [SerializeField] private List<CardData> allCards;
     [SerializeField] private TextMeshProUGUI contextLabel;
-    [SerializeField] private TextMeshPro rightTextLabel;
-    [SerializeField] private TextMeshPro leftTextLabel;
+    [SerializeField] private TextMeshProUGUI rightTextLabel;
+    [SerializeField] private TextMeshProUGUI leftTextLabel;
 
 
     // Este baralho será usado e modificado durante o jogo
@@ -45,6 +46,10 @@ public class CardsManager : MonoBehaviour
         // Embaralha o baralho para aleatoriedade (usando System.Linq)
         System.Random rng = new();
         availableCards = availableCards.OrderBy(a => rng.Next()).ToList();
+        CurrentCard = tutorialCard;
+        contextLabel.text = CurrentCard.decisao;
+        rightTextLabel.text = CurrentCard.textoEscolhaDireita;
+        leftTextLabel.text = CurrentCard.textoEscolhaEsquerda;
     }
 
     /// <summary>
@@ -88,5 +93,24 @@ public class CardsManager : MonoBehaviour
     public string GetCurrentCardLeftResult()
     {
         return CurrentCard.textoResultadoEsquerda;
+    }
+
+    /// <summary>
+    /// Dispara o evento UnityEvent configurado para a escolha da ESQUERDA na carta atual.
+    /// </summary>
+    public void TriggerLeftChoiceEvent()
+    {
+        if (CurrentCard != null && CurrentCard.eventoEscolhaEsquerda != null)
+        {
+            CurrentCard.eventoEscolhaEsquerda.Raise(); // MUDANÇA AQUI
+        }
+    }
+
+    public void TriggerRightChoiceEvent()
+    {
+        if (CurrentCard != null && CurrentCard.eventoEscolhaDireita != null)
+        {
+            CurrentCard.eventoEscolhaDireita.Raise(); // MUDANÇA AQUI
+        }
     }
 }

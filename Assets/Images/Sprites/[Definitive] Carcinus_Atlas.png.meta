@@ -1,0 +1,823 @@
+fileFormatVersion: 2
+guid: 06d7a15ef360742489c05b6fcf5aaa55
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6828198368423945459
+    second: '[Definitive] Carcinus_Atlas_0'
+  - first:
+      213: 8979157178147243996
+    second: '[Definitive] Carcinus_Atlas_1'
+  - first:
+      213: 5469987288235532597
+    second: '[Definitive] Carcinus_Atlas_2'
+  - first:
+      213: -510863344623135440
+    second: '[Definitive] Carcinus_Atlas_3'
+  - first:
+      213: -7063715481084286790
+    second: '[Definitive] Carcinus_Atlas_4'
+  - first:
+      213: -6824504542766476102
+    second: '[Definitive] Carcinus_Atlas_5'
+  - first:
+      213: -4442110861869723856
+    second: '[Definitive] Carcinus_Atlas_6'
+  - first:
+      213: 4622614960878177514
+    second: '[Definitive] Carcinus_Atlas_7'
+  - first:
+      213: -6712821274251014408
+    second: '[Definitive] Carcinus_Atlas_8'
+  - first:
+      213: 4085625758998462793
+    second: '[Definitive] Carcinus_Atlas_9'
+  - first:
+      213: 6349358654174250619
+    second: '[Definitive] Carcinus_Atlas_10'
+  - first:
+      213: -4924013679533084549
+    second: '[Definitive] Carcinus_Atlas_11'
+  - first:
+      213: -967247231152093428
+    second: '[Definitive] Carcinus_Atlas_12'
+  - first:
+      213: -7190356637776898781
+    second: '[Definitive] Carcinus_Atlas_13'
+  - first:
+      213: 7654052067322379970
+    second: '[Definitive] Carcinus_Atlas_14'
+  - first:
+      213: 1295309066118578308
+    second: '[Definitive] Carcinus_Atlas_15'
+  - first:
+      213: -2083911202289187637
+    second: '[Definitive] Carcinus_Atlas_16'
+  - first:
+      213: 1884934829420547480
+    second: '[Definitive] Carcinus_Atlas_17'
+  - first:
+      213: 4655972933911411126
+    second: '[Definitive] Carcinus_Atlas_18'
+  - first:
+      213: 1108704469820381984
+    second: '[Definitive] Carcinus_Atlas_19'
+  - first:
+      213: 6423976138583557385
+    second: '[Definitive] Carcinus_Atlas_20'
+  - first:
+      213: -2010389367776711965
+    second: '[Definitive] Carcinus_Atlas_21'
+  - first:
+      213: 2446945387781107319
+    second: '[Definitive] Carcinus_Atlas_22'
+  - first:
+      213: 34145845834519735
+    second: '[Definitive] Carcinus_Atlas_23'
+  - first:
+      213: -7983584406475760843
+    second: '[Definitive] Carcinus_Atlas_24'
+  - first:
+      213: -1874526773361177633
+    second: '[Definitive] Carcinus_Atlas_25'
+  - first:
+      213: -2348954364814174497
+    second: '[Definitive] Carcinus_Atlas_26'
+  - first:
+      213: 5960623595668638705
+    second: '[Definitive] Carcinus_Atlas_27'
+  - first:
+      213: -2651859128442644472
+    second: '[Definitive] Carcinus_Atlas_28'
+  - first:
+      213: 1946148196095399252
+    second: '[Definitive] Carcinus_Atlas_29'
+  - first:
+      213: -3903812868937726026
+    second: '[Definitive] Carcinus_Atlas_30'
+  - first:
+      213: -3345843249760531439
+    second: '[Definitive] Carcinus_Atlas_31'
+  - first:
+      213: -7708295493815032922
+    second: '[Definitive] Carcinus_Atlas_32'
+  - first:
+      213: -6301586096093195798
+    second: '[Definitive] Carcinus_Atlas_33'
+  - first:
+      213: 7486183737486225999
+    second: '[Definitive] Carcinus_Atlas_34'
+  - first:
+      213: -2534505836891621120
+    second: '[Definitive] Carcinus_Atlas_35'
+  - first:
+      213: 7816790607735955120
+    second: '[Definitive] Carcinus_Atlas_36'
+  - first:
+      213: 1855055448184032417
+    second: '[Definitive] Carcinus_Atlas_37'
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_0'
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2343
+        width: 782
+        height: 1690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b5032e2cd5d31a0800000000000000
+      internalID: -6828198368423945459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_1'
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 2342
+        width: 782
+        height: 1690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd78dd141ef5c9c70800000000000000
+      internalID: 8979157178147243996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_2'
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 2343
+        width: 782
+        height: 1690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5316e29157c49eb40800000000000000
+      internalID: 5469987288235532597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_3'
+      rect:
+        serializedVersion: 2
+        x: 2436
+        y: 2373
+        width: 782
+        height: 1690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03558f6ae7c09e8f0800000000000000
+      internalID: -510863344623135440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_4'
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 2373
+        width: 778
+        height: 1685
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab82b83f134a8fd90800000000000000
+      internalID: -7063715481084286790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_5'
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 642
+        width: 782
+        height: 1690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab45d50b64d7a41a0800000000000000
+      internalID: -6824504542766476102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_6'
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 642
+        width: 782
+        height: 1690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fc959d4b37a52c0800000000000000
+      internalID: -4442110861869723856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_7'
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 641
+        width: 782
+        height: 1690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeccc84b0d3d62040800000000000000
+      internalID: 4622614960878177514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_8'
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 1720
+        width: 936
+        height: 647
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe459bfd9447d2a0800000000000000
+      internalID: -6712821274251014408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_9'
+      rect:
+        serializedVersion: 2
+        x: 3367
+        y: 1329
+        width: 678
+        height: 1014
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9410a423bfe03b830800000000000000
+      internalID: 4085625758998462793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_10'
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 1103
+        width: 464
+        height: 593
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76cb9d3e047d1850800000000000000
+      internalID: 6349358654174250619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_16'
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 1196
+        width: 434
+        height: 389
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc488147dc57413e0800000000000000
+      internalID: -2083911202289187637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_19'
+      rect:
+        serializedVersion: 2
+        x: 3474
+        y: 1079
+        width: 561
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b188457d8e26f00800000000000000
+      internalID: 1108704469820381984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_23'
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 767
+        width: 1579
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b49583477f497000800000000000000
+      internalID: 34145845834519735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_24'
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 326
+        width: 353
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b1aa9f74c943190800000000000000
+      internalID: -7983584406475760843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_25'
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 316
+        width: 326
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb09dfc4d75cf5e0800000000000000
+      internalID: -1874526773361177633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_26'
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 155
+        width: 456
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd6d5a35376d66fd0800000000000000
+      internalID: -2348954364814174497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_27'
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 15
+        width: 308
+        height: 542
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb04ab549368b250800000000000000
+      internalID: 5960623595668638705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_28'
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 49
+        width: 491
+        height: 492
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8089cce3c24b23bd0800000000000000
+      internalID: -2651859128442644472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_31'
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 477
+        width: 1621
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c82e79a4d2191d0800000000000000
+      internalID: -3345843249760531439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_32'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 360
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a32963b612a60590800000000000000
+      internalID: -7708295493815032922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_33'
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 3
+        width: 306
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae113d435d44c88a0800000000000000
+      internalID: -6301586096093195798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_34'
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 2
+        width: 519
+        height: 459
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f423c2c127444e760800000000000000
+      internalID: 7486183737486225999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[Definitive] Carcinus_Atlas_37'
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 4
+        width: 1633
+        height: 465
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac89a30a1b7eb910800000000000000
+      internalID: 1855055448184032417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fc4058aeb6aa7b242ac834cd516cbed8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      '[Definitive] Carcinus_Atlas_0': -6828198368423945459
+      '[Definitive] Carcinus_Atlas_1': 8979157178147243996
+      '[Definitive] Carcinus_Atlas_10': 6349358654174250619
+      '[Definitive] Carcinus_Atlas_11': -4924013679533084549
+      '[Definitive] Carcinus_Atlas_12': -967247231152093428
+      '[Definitive] Carcinus_Atlas_13': -7190356637776898781
+      '[Definitive] Carcinus_Atlas_14': 7654052067322379970
+      '[Definitive] Carcinus_Atlas_15': 1295309066118578308
+      '[Definitive] Carcinus_Atlas_16': -2083911202289187637
+      '[Definitive] Carcinus_Atlas_17': 1884934829420547480
+      '[Definitive] Carcinus_Atlas_18': 4655972933911411126
+      '[Definitive] Carcinus_Atlas_19': 1108704469820381984
+      '[Definitive] Carcinus_Atlas_2': 5469987288235532597
+      '[Definitive] Carcinus_Atlas_20': 6423976138583557385
+      '[Definitive] Carcinus_Atlas_21': -2010389367776711965
+      '[Definitive] Carcinus_Atlas_22': 2446945387781107319
+      '[Definitive] Carcinus_Atlas_23': 34145845834519735
+      '[Definitive] Carcinus_Atlas_24': -7983584406475760843
+      '[Definitive] Carcinus_Atlas_25': -1874526773361177633
+      '[Definitive] Carcinus_Atlas_26': -2348954364814174497
+      '[Definitive] Carcinus_Atlas_27': 5960623595668638705
+      '[Definitive] Carcinus_Atlas_28': -2651859128442644472
+      '[Definitive] Carcinus_Atlas_29': 1946148196095399252
+      '[Definitive] Carcinus_Atlas_3': -510863344623135440
+      '[Definitive] Carcinus_Atlas_30': -3903812868937726026
+      '[Definitive] Carcinus_Atlas_31': -3345843249760531439
+      '[Definitive] Carcinus_Atlas_32': -7708295493815032922
+      '[Definitive] Carcinus_Atlas_33': -6301586096093195798
+      '[Definitive] Carcinus_Atlas_34': 7486183737486225999
+      '[Definitive] Carcinus_Atlas_35': -2534505836891621120
+      '[Definitive] Carcinus_Atlas_36': 7816790607735955120
+      '[Definitive] Carcinus_Atlas_37': 1855055448184032417
+      '[Definitive] Carcinus_Atlas_4': -7063715481084286790
+      '[Definitive] Carcinus_Atlas_5': -6824504542766476102
+      '[Definitive] Carcinus_Atlas_6': -4442110861869723856
+      '[Definitive] Carcinus_Atlas_7': 4622614960878177514
+      '[Definitive] Carcinus_Atlas_8': -6712821274251014408
+      '[Definitive] Carcinus_Atlas_9': 4085625758998462793
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 17
+  m_EditorClassIdentifier: 
+  decisao: "Durante a noite, sua tropa acende uma fogueira para se aquecer, contrariando
+    as ordens de sigilo. A fuma\xE7a pode denunciar a posi\xE7\xE3o.\r"
+  textoEscolhaEsquerda: Permito a fogueira.
+  textoResultadoEsquerda: "O calor da fogueira eleva o esp\xEDrito da tropa, que
+    se sente ouvida e cuidada."
+  textoEscolhaDireita: Apago o fogo, mesmo sob protestos.
+  textoResultadoDireita: "Voc\xEA mant\xE9m o sigilo da sua posi\xE7\xE3o, evitando
+    ser detectado. Contudo, a moral do grupo despenca ao ver sua necessidade ignorada,
+    e o frio aumenta o desconforto."
+  valoresEscolhaEsquerda: 000000000000000014000000f1ffffff
+  valoresEscolhaDireita: 0000000000000000ecffffff0f000000
+  eventoEscolhaEsquerda: {fileID: 11400000, guid: fa7cc22f83561284e8aab2f0c9c7e0b4, type: 2}
+  eventoEscolhaDireita: {fileID: 0}

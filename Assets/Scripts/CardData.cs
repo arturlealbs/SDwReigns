@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "NovaCarta", menuName = "Jogo/Carta", order = 1)]
 public class CardData : ScriptableObject
@@ -29,6 +30,13 @@ public class CardData : ScriptableObject
     [Header("Valores da Escolha da DIREITA")]
     [Tooltip("Mudanças nos status se o jogador escolher a opção da direita. Ordem: Comida, Armas, Popularidade, Energia")]
     public int[] valoresEscolhaDireita = new int[4]; // Ex: [Comida, Armas, Popularidade, Energia]
+
+    [Header("Eventos de Escolha (Opcional)")]
+    [Tooltip("Evento disparado ao escolher a opção da ESQUERDA.")]
+    public GameEvent eventoEscolhaEsquerda; // MUDANÇA AQUI
+
+    [Tooltip("Evento disparado ao escolher a opção da DIREITA.")]
+    public GameEvent eventoEscolhaDireita; // MUDANÇA AQUI
 
     // Você pode adicionar mais campos aqui, como:
     // public Sprite arteDaCarta;

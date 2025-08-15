@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,13 @@ public class VotingManager : MonoBehaviour
     public CardsManager cardsManager;
     public StatsManager statsManager;
     public GameObject goalsPanel;
+    public GameObject stats;
+    public RectTransform homeButton;
+    public GameObject returnButton;
+    public Image backgroundImage;
+    public Button leftButton;
+    public Button rightButton;
+    public Button confirmButton;
 
     [Header("Telas (GameObjects)")]
     public GameObject selectionScreen; // Tela inicial com os botões dos players
@@ -20,6 +28,7 @@ public class VotingManager : MonoBehaviour
     public TextMeshProUGUI resultsText; // Texto que mostra os resultados na tela de resultados
     public TextMeshProUGUI playerNameText;
     public TextMeshProUGUI goalsText;
+    [SerializeField] private List<Sprite> backgroundImages = new List<Sprite>();
 
     [Header("Botões dos Players")]
     // Arraste todos os botões dos players para esta lista no Inspector
@@ -30,6 +39,10 @@ public class VotingManager : MonoBehaviour
     private int playersVoted = 0;
     private int totalPlayers;
     private string cardResultsText = string.Empty;
+    private PlayerComponent currentPlayer;
+    private Button currentButton;
+    private string currentVote;
+
     void Start()
     {
         // Define o número total de players com base na quantidade de botões
@@ -40,7 +53,6 @@ public class VotingManager : MonoBehaviour
         votingScreen.SetActive(false);
         resultsScreen.SetActive(false);
 
-        cardsManager.GetNextCard();
     }
 
     /// <summary>
@@ -51,17 +63,65 @@ public class VotingManager : MonoBehaviour
     public void OnPlayerSelects(Button clickedButton)
     {
         // 1. Desabilita o botão que foi clicado para que não possa ser usado novamente
-        clickedButton.interactable = false;
-        PlayerComponent playerID = clickedButton.GetComponent<PlayerComponent>();
-        playerNameText.text = "Player " + playerID.id; // Atualiza o texto com o ID do jogador
-        goalsText.text = playerID.goal; // Atualiza o texto com o objetivo do jogador
+        currentButton = clickedButton;
+        currentButton.interactable = false;
+        currentPlayer = clickedButton.GetComponent<PlayerComponent>();
+        playerNameText.text = "Player " + currentPlayer.id; // Atualiza o texto com o ID do jogador
+        goalsText.text = string.Join("\n", currentPlayer.goals.Select(g => "• " + g)); // Atualiza o texto com o objetivo do jogador
 
         // 2. Esconde a tela de seleção de players
         selectionScreen.SetActive(false);
 
         // 3. Mostra a tela de escolha/votação
         votingScreen.SetActive(true);
+        Vector2 currentPosition = homeButton.anchoredPosition;
+
+        // Adiciona 400 à posição X.
+        currentPosition.x = 400f;
+
+        // Aplica a nova posição ao botão.
+        homeButton.anchoredPosition = currentPosition;
+
+        backgroundImage.sprite = backgroundImages[1]; // Atualiza a imagem de fundo com base no ID do jogador
+        stats.SetActive(true); // Mostra o painel de stats do jogador atual
         cardObject.SetActive(true); // Mostra o card para o player votar
+    }
+
+    public void OnPlayerReturns()
+    {
+        votingScreen.SetActive(false);
+        selectionScreen.SetActive(true);
+        currentButton.interactable = true; // Reabilita o botão do player que retornou
+
+        Vector2 currentPosition = homeButton.anchoredPosition;
+        currentPosition.x = 0f;
+        homeButton.anchoredPosition = currentPosition;
+
+        backgroundImage.sprite = backgroundImages[0];
+        stats.SetActive(false); // Esconde o painel de stats do jogador atual
+
+    }
+
+    public void OnSelectedRight()
+    {
+        leftButton.interactable = true;
+        confirmButton.interactable = true;
+        rightButton.interactable = false;
+        statsManager.StopPulseEffect();
+        statsManager.StartPulseEffect(cardsManager.GetCurrentCardRightValues());
+
+        currentVote = "Right";
+    }
+
+    public void OnSelectedLeft()
+    {
+        leftButton.interactable = false;
+        confirmButton.interactable = true;
+        rightButton.interactable = true;
+        statsManager.StopPulseEffect();
+        statsManager.StartPulseEffect(cardsManager.GetCurrentCardLeftValues());
+
+        currentVote = "Left";
     }
 
     /// <summary>
@@ -85,11 +145,28 @@ public class VotingManager : MonoBehaviour
     /// <summary>
     /// Lógica executada após um jogador registrar seu voto.
     /// </summary>
-    private void PlayerHasVoted()
+    public void PlayerHasVoted()
     {
+        if (currentVote == "Right")
+        {
+            rightVotes++;
+            rightButton.interactable = true;
+            confirmButton.interactable = false;
+        } else
+        {
+            leftVotes++;
+            leftButton.interactable = true;
+            confirmButton.interactable = false;
+        }
+        
         playersVoted++;
+        statsManager.StopPulseEffect();
         votingScreen.SetActive(false);
         cardObject.SetActive(false); // Esconde o card após o voto
+        Vector2 currentPosition = homeButton.anchoredPosition;
+        currentPosition.x = 0f;
+        homeButton.anchoredPosition = currentPosition;
+        stats.SetActive(false);
 
         // Verifica se todos os jogadores já votaram
         if (playersVoted >= totalPlayers)
@@ -114,14 +191,18 @@ public class VotingManager : MonoBehaviour
         {
             statsManager.UpdateStats(cardsManager.GetCurrentCardRightValues());
             cardResultsText = cardsManager.GetCurrentCardRightResult();
+            cardsManager.TriggerRightChoiceEvent();
+
         }
         else
         {
             statsManager.UpdateStats(cardsManager.GetCurrentCardLeftValues());
             cardResultsText = cardsManager.GetCurrentCardLeftResult();
+            cardsManager.TriggerLeftChoiceEvent();
         }
         Debug.Log(cardResultsText);
         resultsScreen.SetActive(true);
+        backgroundImage.sprite = backgroundImages[2];
         
         if (cardResultsText != string.Empty)
         {
@@ -159,8 +240,9 @@ public class VotingManager : MonoBehaviour
         votingScreen.SetActive(false);
         resultsScreen.SetActive(false);
         cardObject.SetActive(false);
-
+        stats.SetActive(false); // Esconde o painel de stats
         cardsManager.GetNextCard();
+        backgroundImage.sprite = backgroundImages[0];
     }
 
     public void OnClickGoals()

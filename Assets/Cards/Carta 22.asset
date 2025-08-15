@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 22
+  m_EditorClassIdentifier: 
+  decisao: "Crian\xE7as e adolescentes \xF3rf\xE3os formaram um grupo de apoio \xE0
+    resist\xEAncia. Eles se oferecem como olheiros em \xE1reas de risco. Levar esses
+    jovens pode gerar informa\xE7\xF5es valiosas, ou acabar em trag\xE9dia."
+  textoEscolhaEsquerda: "Aceito a ajuda com supervis\xE3o."
+  textoResultadoEsquerda: "Os jovens se tornam olheiros eficazes, trazendo informa\xE7\xF5es
+    valiosas sobre as \xE1reas de risco, o que melhora sua seguran\xE7a e planejamento. "
+  textoEscolhaDireita: "N\xE3o expor crian\xE7as \xE0 guerra."
+  textoResultadoDireita: " Voc\xEA protege os jovens dos horrores da guerra e a moral
+    do grupo \xE9 elevada pela sua decis\xE3o compassiva. No entanto, voc\xEA perde
+    uma fonte potencial de intelig\xEAncia, o que pode dificultar suas opera\xE7\xF5es. "
+  valoresEscolhaEsquerda: 050000000000000014000000f6ffffff
+  valoresEscolhaDireita: 00000000000000000f00000000000000
+  eventoEscolhaEsquerda: {fileID: 0}
+  eventoEscolhaDireita: {fileID: 11400000, guid: 6f4a9b3903fb52e4c837ed586836a321, type: 2}

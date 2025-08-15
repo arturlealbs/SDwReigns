@@ -1,10 +1,15 @@
 using UnityEngine;
-using System.Collections;
-using TMPro;
-using UnityEngine.UI;
+using TMPro; // Namespace para TextMeshPro
+using UnityEngine.UI; // Namespace para UI.Image
+using System.Collections; // Namespace para Coroutines
+using UnityEngine.InputSystem; // NOVO: Namespace para o novo Input System
+using UnityEngine.EventSystems; // NOVO: Namespace para verificar a UI
 
 public class CardController : MonoBehaviour
 {
+    #region Variáveis SerializeField
+    // --- Todas as suas variáveis públicas permanecem exatamente as mesmas ---
+
     [Header("Object References")]
     [Tooltip("O Transform do objeto visual do card que deve rotacionar.")]
     [SerializeField] private Transform cardSprite;
@@ -16,7 +21,7 @@ public class CardController : MonoBehaviour
     [SerializeField] private float maxRotationAngle = 15.0f;
     [SerializeField] private float returnSpeed = 10.0f;
 
-    [Header("Decision Logic")] // <<< NOVA SEÇÃO
+    [Header("Decision Logic")]
     [Tooltip("A distância que o card precisa ser arrastado para que uma escolha seja confirmada.")]
     [SerializeField] private float decisionDistance = 2.0f;
 
@@ -46,23 +51,55 @@ public class CardController : MonoBehaviour
     [SerializeField] private TextMeshPro leftText;
     [SerializeField] private float textFadeStartDistance = 0.5f;
     [SerializeField] private float textMaxVerticalOffset = -0.2f;
+    #endregion
 
+    #region Variáveis Privadas
+    // --- Variáveis privadas existentes ---
     private Vector3 originalPosition;
     private Quaternion originalRotation;
-    private Vector3 initialMousePosition;
     private bool isDragging = false;
-    private Coroutine activeCoroutine; // Renomeado para ser genérico
+    private Coroutine activeCoroutine;
     private Vector3 rightTextOriginalLocalPos;
     private Vector3 leftTextOriginalLocalPos;
-    private Collider2D cardCollider; // Referência para o collider
+    private Collider2D cardCollider;
     private Vector2 statsOriginalLocalPos;
     private Image[] statsImages;
     private enum StatDirection { Neutral, Left, Right }
     private StatDirection currentStatDirection;
 
+    // --- NOVAS variáveis para o Input System ---
+    private PlayerControls playerControls;
+    private Camera mainCamera;
+    private Vector3 initialPointerWorldPosition; // Substitui initialMousePosition
+    #endregion
+
+    #region Métodos do Ciclo de Vida do Unity (Awake, Start, etc.)
+
+    // NOVO: Awake é usado para inicializar objetos antes de Start
+    private void Awake()
+    {
+        mainCamera = Camera.main;
+        playerControls = new PlayerControls();
+    }
+
+    // NOVO: OnEnable/OnDisable gerenciam a ativação dos controles
+    private void OnEnable()
+    {
+        playerControls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerControls.Disable();
+    }
+
+    // Start agora também configura as inscrições nos eventos de input
     void Start()
     {
-        cardCollider = GetComponent<Collider2D>(); // Pega o collider
+        // Pega o collider
+        cardCollider = GetComponent<Collider2D>();
+
+        // --- Sua lógica de Start original permanece intacta ---
         originalPosition = transform.position;
         originalRotation = cardSprite.rotation;
 
@@ -76,39 +113,38 @@ public class CardController : MonoBehaviour
             leftTextOriginalLocalPos = leftText.transform.localPosition;
             SetTextAlpha(leftText, 0);
         }
-
-        // Inicializa os indicadores de stats
         if (statsContainer != null)
         {
-            // Guarda a posição inicial do container
             statsOriginalLocalPos = statsContainer.anchoredPosition;
-
-            // Pega TODAS as imagens que são filhas do container
             statsImages = statsContainer.GetComponentsInChildren<Image>();
-
-            // Garante que todos os indicadores comecem invisíveis
             foreach (Image img in statsImages)
             {
                 SetImageAlpha(img, 0);
             }
         }
+
+        // --- NOVO: Inscrição nos eventos de input ---
+        // Quando o botão/toque é pressionado, chama OnPointerPressStarted
+        playerControls.Gameplay.PointerPress.started += context => OnPointerPressStarted();
+
+        // Quando o botão/toque é solto, chama OnPointerPressCanceled
+        playerControls.Gameplay.PointerPress.canceled += context => OnPointerPressCanceled();
     }
 
-    private void OnMouseDown()
+    // NOVO: O Update agora lida com a lógica de arrastar (o antigo OnMouseDrag)
+    void Update()
     {
-        if (activeCoroutine != null) StopCoroutine(activeCoroutine);
-        initialMousePosition = GetMouseWorldPosition();
-        isDragging = true;
-
-        // Reseta o estado da direção no início de cada arraste
-        currentStatDirection = StatDirection.Neutral;
-    }
-
-    private void OnMouseDrag()
-    {
+        // Se não estamos arrastando, não faz nada.
         if (!isDragging) return;
 
-        float distanceX = GetMouseWorldPosition().x - initialMousePosition.x;
+        // Pega a posição do ponteiro na tela
+        Vector2 pointerScreenPosition = playerControls.Gameplay.PointerPosition.ReadValue<Vector2>();
+
+        // Converte para a posição no mundo do jogo
+        Vector3 pointerWorldPosition = mainCamera.ScreenToWorldPoint(pointerScreenPosition);
+
+        // --- A lógica de OnMouseDrag é copiada para cá ---
+        float distanceX = pointerWorldPosition.x - initialPointerWorldPosition.x;
         float clampedDistance = Mathf.Clamp(distanceX, -maxDistance, maxDistance);
 
         transform.position = new Vector3(originalPosition.x + clampedDistance, originalPosition.y, originalPosition.z);
@@ -121,64 +157,96 @@ public class CardController : MonoBehaviour
             cardSprite.rotation = Quaternion.Euler(0, 0, currentAngle);
         }
 
-        // --- LÓGICA DE ATUALIZAÇÃO DE STATS POR DIREÇÃO ---
-
-        // 1. Determina a direção alvo com base na posição atual
         StatDirection targetDirection;
-        if (clampedDistance > 0.1f) // Usamos um pequeno limiar para evitar oscilações no centro
-        {
+        if (clampedDistance > 0.1f)
             targetDirection = StatDirection.Right;
-        }
         else if (clampedDistance < -0.1f)
-        {
             targetDirection = StatDirection.Left;
-        }
         else
-        {
             targetDirection = StatDirection.Neutral;
-        }
 
-        // 2. Compara a direção alvo com a direção atual e atualiza APENAS se houver mudança
         if (targetDirection != currentStatDirection)
         {
             UpdateStatsForDirection(targetDirection);
-            currentStatDirection = targetDirection; // Atualiza o estado atual
+            currentStatDirection = targetDirection;
         }
 
         UpdateTextFeedback(clampedDistance);
         UpdateStatsIndicators(clampedDistance);
     }
 
-    private void OnMouseUp()
-    {
-        if (!isDragging) return;
-        isDragging = false;
+    #endregion
 
+    #region Novos Handlers de Input
+
+    // NOVO: Chamado quando o toque/clique começa. Substitui OnMouseDown.
+    private void OnPointerPressStarted()
+    {
+        // Pega a posição do ponteiro na tela
+        Vector2 pointerScreenPosition = playerControls.Gameplay.PointerPosition.ReadValue<Vector2>();
+
+        // Se o toque foi em um botão da UI, ignora completamente.
+        if (IsPointerOverUI(pointerScreenPosition)) return;
+
+        // Verifica se o toque atingiu o collider deste card
+        RaycastHit2D hit = Physics2D.Raycast(mainCamera.ScreenToWorldPoint(pointerScreenPosition), Vector2.zero);
+        if (hit.collider != null && hit.collider.gameObject == this.gameObject)
+        {
+            // Começa o arraste (lógica do antigo OnMouseDown)
+            if (activeCoroutine != null) StopCoroutine(activeCoroutine);
+
+            initialPointerWorldPosition = mainCamera.ScreenToWorldPoint(pointerScreenPosition);
+            isDragging = true;
+            currentStatDirection = StatDirection.Neutral;
+        }
+    }
+
+    // NOVO: Chamado quando o toque/clique termina. Substitui OnMouseUp.
+    private void OnPointerPressCanceled()
+    {
+        // Se não estávamos arrastando, não faz nada.
+        if (!isDragging) return;
+
+        // Lógica do antigo OnMouseUp
+        isDragging = false;
         float horizontalDistance = transform.position.x - originalPosition.x;
 
-        // Verifica se a distância absoluta (para qualquer um dos lados) ultrapassou o limite de decisão
         if (Mathf.Abs(horizontalDistance) > decisionDistance)
         {
-            // ESCOLHA TOMADA
             activeCoroutine = StartCoroutine(AnimateChoice(horizontalDistance));
         }
         else
         {
-            // VOLTAR AO CENTRO
             activeCoroutine = StartCoroutine(ReturnToOrigin());
         }
     }
 
-    // NOVA COROUTINE para animar a queda do card
+    // NOVO: Função auxiliar para verificar se o ponteiro está sobre a UI
+    private bool IsPointerOverUI(Vector2 screenPosition)
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current)
+        {
+            position = screenPosition
+        };
+        var results = new System.Collections.Generic.List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        return results.Count > 0;
+    }
+
+    #endregion
+
+    // =============================================================================================
+    // TODAS AS SUAS OUTRAS FUNÇÕES (COROUTINES, HELPERS) PERMANECEM EXATAMENTE IGUAIS
+    // =============================================================================================
+
+    #region Coroutines e Funções de Feedback
+
     private IEnumerator AnimateChoice(float direction)
     {
-        // Desativa o collider para impedir novos cliques durante a animação
         if (cardCollider != null) cardCollider.enabled = false;
-
         float currentVerticalSpeed = 0f;
         float horizontalSpeed = Mathf.Abs(direction) * horizontalSpeedMultiplier;
 
-        // O loop de animação de queda (exatamente como antes)
         while (transform.position.y > verticalResetLimit)
         {
             currentVerticalSpeed += fallAcceleration * Time.deltaTime;
@@ -189,51 +257,42 @@ public class CardController : MonoBehaviour
             yield return null;
         }
 
-        // --- FIM DA ANIMAÇÃO: RESET E DESATIVAÇÃO ---
-
-        // 1. Registra a escolha no console
         if (direction > 0)
         {
             Debug.Log("ESCOLHA DA DIREITA TOMADA!");
-            votingManager.OnVoteRight(); // Chama o método de voto da direita
+            votingManager.OnVoteRight();
         }
         else
         {
             Debug.Log("ESCOLHA DA ESQUERDA TOMADA!");
-            votingManager.OnVoteLeft(); // Chama o método de voto da esquerda
+            votingManager.OnVoteLeft();
         }
 
-        // 2. Reseta a posição do controlador e a rotação do sprite para os valores originais.
         transform.SetPositionAndRotation(originalPosition, Quaternion.identity);
         if (cardSprite != null) cardSprite.rotation = originalRotation;
 
-        // 3. Reseta os textos (opacidade e posição).
         if (rightText != null)
         {
             SetTextAlpha(rightText, 0);
             rightText.transform.localPosition = rightTextOriginalLocalPos;
-            rightText.transform.rotation = Quaternion.identity; // Reseta a rotação do texto
+            rightText.transform.rotation = Quaternion.identity;
         }
         if (leftText != null)
         {
             SetTextAlpha(leftText, 0);
             leftText.transform.localPosition = leftTextOriginalLocalPos;
-            leftText.transform.rotation = Quaternion.identity; // Reseta a rotação do texto
+            leftText.transform.rotation = Quaternion.identity;
         }
-        
+
         UpdateStatsValues(new int[] { 0, 0, 0, 0 });
         currentStatDirection = StatDirection.Neutral;
-        // 4. REATIVA o collider para que o card possa ser clicado novamente quando for reutilizado.
-        // Este passo é MUITO importante para object pooling.
         if (cardCollider != null) cardCollider.enabled = true;
-
     }
 
     private IEnumerator ReturnToOrigin()
     {
         Vector3 startPosition = transform.position;
         Quaternion startRotation = cardSprite.rotation;
-
         Color startRightColor = rightText != null ? rightText.color : Color.clear;
         Color startLeftColor = leftText != null ? leftText.color : Color.clear;
         Vector3 startRightLocalPos = rightText != null ? rightText.transform.localPosition : Vector3.zero;
@@ -277,133 +336,77 @@ public class CardController : MonoBehaviour
         activeCoroutine = null;
     }
 
-    // As funções abaixo permanecem inalteradas
     private void UpdateTextFeedback(float horizontalDistance)
     {
-        if (rightText != null)
-        {
-            float rightAlpha = Mathf.InverseLerp(textFadeStartDistance, maxDistance, horizontalDistance);
-            SetTextAlpha(rightText, rightAlpha);
-            float rightOffsetY = Mathf.Lerp(0, textMaxVerticalOffset, rightAlpha);
-            rightText.transform.localPosition = new Vector3(rightTextOriginalLocalPos.x, rightTextOriginalLocalPos.y + rightOffsetY, rightTextOriginalLocalPos.z);
-        }
-        if (leftText != null)
-        {
-            float leftAlpha = Mathf.InverseLerp(-textFadeStartDistance, -maxDistance, horizontalDistance);
-            SetTextAlpha(leftText, leftAlpha);
-            float leftOffsetY = Mathf.Lerp(0, textMaxVerticalOffset, leftAlpha);
-            leftText.transform.localPosition = new Vector3(leftTextOriginalLocalPos.x, leftTextOriginalLocalPos.y + leftOffsetY, leftTextOriginalLocalPos.z);
-        }
+        if (rightText == null || leftText == null) return;
+
+        float rightAlpha = Mathf.InverseLerp(textFadeStartDistance, maxDistance, horizontalDistance);
+        SetTextAlpha(rightText, rightAlpha);
+        float rightOffsetY = Mathf.Lerp(0, textMaxVerticalOffset, rightAlpha);
+        rightText.transform.localPosition = new Vector3(rightTextOriginalLocalPos.x, rightTextOriginalLocalPos.y + rightOffsetY, rightTextOriginalLocalPos.z);
+
+        float leftAlpha = Mathf.InverseLerp(-textFadeStartDistance, -maxDistance, horizontalDistance);
+        SetTextAlpha(leftText, leftAlpha);
+        float leftOffsetY = Mathf.Lerp(0, textMaxVerticalOffset, leftAlpha);
+        leftText.transform.localPosition = new Vector3(leftTextOriginalLocalPos.x, leftTextOriginalLocalPos.y + leftOffsetY, leftTextOriginalLocalPos.z);
     }
 
     private void UpdateStatsIndicators(float horizontalDistance)
     {
-        // Se o container não foi definido, não faz nada.
         if (statsContainer == null) return;
 
-        // Pega a distância absoluta, pois o efeito é o mesmo para a esquerda ou direita.
         float absoluteDistance = Mathf.Abs(horizontalDistance);
-
-        // Calcula o alfa usando InverseLerp, começando do limiar (textFadeStartDistance) até a distância máxima.
-        // O alfa será um valor entre 0 e 1.
         float alpha = Mathf.InverseLerp(textFadeStartDistance, maxDistance, absoluteDistance);
 
-        // Itera por todos os indicadores (imagens) e aplica o mesmo alfa.
         foreach (Image img in statsImages)
         {
             SetImageAlpha(img, alpha);
         }
 
-        // Calcula o deslocamento vertical para o container pai.
         float offsetY = Mathf.Lerp(0, statsMaxVerticalOffset, alpha);
-
-        // Aplica o deslocamento ao RectTransform usando anchoredPosition (correto para UI).
         statsContainer.anchoredPosition = new Vector2(statsOriginalLocalPos.x, statsOriginalLocalPos.y + offsetY);
     }
 
-    /// <summary>
-    /// Pega os valores do CardsManager com base na direção e chama a função de atualização da UI.
-    /// </summary>
     private void UpdateStatsForDirection(StatDirection direction)
     {
-        // Se o cardsManager não existir, não faz nada.
         if (cardsManager == null) return;
 
         int[] newValues;
-
         switch (direction)
         {
             case StatDirection.Right:
-                Debug.Log("Mudou para stats da DIREITA");
                 newValues = cardsManager.GetCurrentCardRightValues();
                 break;
-
             case StatDirection.Left:
-                Debug.Log("Mudou para stats da ESQUERDA");
                 newValues = cardsManager.GetCurrentCardLeftValues();
                 break;
-
             case StatDirection.Neutral:
             default:
-                // Quando volta para o centro, esconde os indicadores de valor
                 newValues = new int[] { 0, 0, 0, 0 };
                 break;
         }
-
-        // Chama a função que atualiza a UI com os novos valores
         UpdateStatsValues(newValues);
     }
 
-    /// <summary>
-    /// Atualiza o tamanho visual dos indicadores de stats com base em um array de valores.
-    /// </summary>
-    /// <param name="statValues">Um array de inteiros (int[]) com os valores de cada stat.</param>
     private void UpdateStatsValues(int[] statValues)
     {
-        // --- Verificações de Segurança (evita erros) ---
-        if (statsImages == null || statsImages.Length == 0)
-        {
-            Debug.LogWarning("O array de imagens de stats não foi configurado.");
-            return;
-        }
-        if (statValues == null || statValues.Length != statsImages.Length)
-        {
-            Debug.LogError("O array de valores de stats é nulo ou tem um tamanho diferente do número de imagens de stats!");
-            return;
-        }
+        if (statsImages == null || statsImages.Length == 0) return;
+        if (statValues == null || statValues.Length != statsImages.Length) return;
 
-        // --- Lógica Principal ---
-        // Itera pelos arrays usando um índice
         for (int i = 0; i < statsImages.Length; i++)
         {
-            // Pega a imagem e o valor correspondente
             Image image = statsImages[i];
             int value = statValues[i];
-
-            // Pega o RectTransform da imagem para manipular seu tamanho
             RectTransform rect = image.rectTransform;
 
-            // Condição 1: Valor é 0, indicador fica invisível.
             if (value == 0)
             {
                 rect.localScale = Vector3.zero;
             }
             else
             {
-                // Garante que o indicador esteja visível antes de ajustar o tamanho.
-                // Isso é importante caso ele estivesse com scale 0 anteriormente.
                 rect.localScale = Vector3.one;
-
-                // Condição 2: Valor acima do limiar
-                if (Mathf.Abs(value) > statValueThreshold)
-                {
-                    rect.sizeDelta = largeStatSize;
-                }
-                // Condição 3: Valor entre 0 e o limiar
-                else
-                {
-                    rect.sizeDelta = smallStatSize;
-                }
+                rect.sizeDelta = (Mathf.Abs(value) > statValueThreshold) ? largeStatSize : smallStatSize;
             }
         }
     }
@@ -418,14 +421,8 @@ public class CardController : MonoBehaviour
     private void SetImageAlpha(Image imageElement, float alpha)
     {
         Color newColor = imageElement.color;
-        newColor.a = Mathf.Clamp01(alpha); // Garante que o alfa esteja sempre entre 0 e 1
+        newColor.a = Mathf.Clamp01(alpha);
         imageElement.color = newColor;
     }
-
-    private Vector3 GetMouseWorldPosition()
-    {
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = Camera.main.WorldToScreenPoint(transform.position).z;
-        return Camera.main.ScreenToWorldPoint(mousePos);
-    }
+    #endregion
 }

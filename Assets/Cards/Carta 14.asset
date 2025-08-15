@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 14
+  m_EditorClassIdentifier: 
+  decisao: "Um engenheiro aparece com um plano ousado: explodir a ponte Maur\xEDcio
+    de Nassau para bloquear o avan\xE7o carcino. Isso pode atrasar os inimigos, mas
+    tamb\xE9m destruir um importante s\xEDmbolo da cidade e causar revolta entre
+    civis.\r"
+  textoEscolhaEsquerda: "Autorizo a explos\xE3o."
+  textoResultadoEsquerda: "A ponte \xE9 destru\xEDda, atrasando o avan\xE7o carcino
+    e dando a voc\xEA uma vantagem t\xE1tica significativa em armas. No entanto,
+    a destrui\xE7\xE3o de um marco t\xE3o importante abala profundamente a moral
+    da popula\xE7\xE3o civil e de sua pr\xF3pria tropa."
+  textoEscolhaDireita: "Pro\xEDbo a a\xE7\xE3o, mantendo o patrim\xF4nio"
+  textoResultadoDireita: "A Ponte Maur\xEDcio de Nassau permanece intacta, preservando
+    um s\xEDmbolo da cidade e mantendo a moral da popula\xE7\xE3o e da tropa relativamente
+    est\xE1vel. Contudo, o avan\xE7o dos carcinus n\xE3o \xE9 contido, e voc\xEA
+    perde uma oportunidade estrat\xE9gica de dificultar a progress\xE3o inimiga. "
+  valoresEscolhaEsquerda: 0000000014000000ecfffffff6ffffff
+  valoresEscolhaDireita: 00000000000000000f00000000000000
+  eventoEscolhaEsquerda: {fileID: 11400000, guid: 64f539e9b0784f94e8c6043dabed7895, type: 2}
+  eventoEscolhaDireita: {fileID: 0}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 2
+  m_EditorClassIdentifier: 
+  decisao: "Um dos soldados mais antigos da tropa tem questionado suas decis\xF5es
+    abertamente. Seu discurso est\xE1 ganhando apoio. Se n\xE3o agir logo, poder\xE1
+    perder o controle da tropa. Voc\xEA pode reunir o grupo para um debate coletivo,
+    o que pode aliviar tens\xF5es e fortalecer a coes\xE3o . Ou pode agir com firmeza
+    e punir o soldado por insubordina\xE7\xE3o\r\n"
+  textoEscolhaEsquerda: 'Promovo uma assembleia para escutar a tropa e manter a unidade.  '
+  textoResultadoEsquerda: "A moral da tropa sobe, sentindo-se ouvida. Voc\xEA ganha
+    a lealdade de muitos, mas a autoridade do soldado rebelde pode ser refor\xE7ada
+    se ele for muito persuasivo."
+  textoEscolhaDireita: Silencio o rebelde e imponho autoridade
+  textoResultadoDireita: "Sua autoridade \xE9 reafirmada, e a dissid\xEAncia \xE9
+    suprimida. No entanto, a moral de alguns soldados pode cair, e um clima de medo
+    pode come\xE7ar a se espalhar."
+  valoresEscolhaEsquerda: 000000000000000014000000f6ffffff
+  valoresEscolhaDireita: 0000000000000000e2ffffff0f000000

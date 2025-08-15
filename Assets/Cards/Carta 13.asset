@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 13
+  m_EditorClassIdentifier: 
+  decisao: "Voc\xEA descobre um grupo humano que abandonou a resist\xEAncia e se
+    juntou espiritualmente aos carcinus, formando um culto religioso que prega a
+    fus\xE3o entre esp\xE9cies. Eles oferecem prote\xE7\xE3o em troca de um ritual
+    simb\xF3lico, onde voc\xEA deve se ajoelhar diante de um l\xEDder carcino."
+  textoEscolhaEsquerda: "Aceito participar do ritual pela prote\xE7\xE3o."
+  textoResultadoEsquerda: "Voc\xEA garante a prote\xE7\xE3o tempor\xE1ria do culto,
+    obtendo um pequeno ganho de alimentos e uma recupera\xE7\xE3o de energia. No
+    entanto, a vis\xE3o de seu l\xEDder se submetendo a um carcino desmoraliza profundamente
+    sua tropa."
+  textoEscolhaDireita: Recuso, mantendo minha dignidade perante os meus.
+  textoResultadoDireita: "Sua firmeza e recusa em se curvar aos carcinus elevam a
+    moral do grupo, refor\xE7ando o respeito por voc\xEA. Contudo, a nega\xE7\xE3o
+    da prote\xE7\xE3o custa parte da sua energia, e o perigo iminente permanece."
+  valoresEscolhaEsquerda: 0a00000000000000ecffffff0a000000
+  valoresEscolhaDireita: 00000000000000000a000000f6ffffff

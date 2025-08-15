@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 3
+  m_EditorClassIdentifier: 
+  decisao: "Voc\xEA tem dois tubar\xF5es para dividir entre adultos e jovens da tropa.
+    Priorizar o seu grupo de conselheiros adultos ou distribuir igualmente com os
+    jovens?"
+  textoEscolhaEsquerda: Distribuir igualmente com os jovens
+  textoResultadoEsquerda: A juventude vibra. Os veteranos resmungam, mas aceitam.
+  textoEscolhaDireita: Priorizar seu grupo de combatentes
+  textoResultadoDireita: Os combatentes se fortalecem. Os jovens se sentem desprezados.
+  valoresEscolhaEsquerda: f1ffffff000000001400000000000000
+  valoresEscolhaDireita: f1ffffff0a000000f6ffffff00000000
+  eventoEscolhaEsquerda: {fileID: 0}
+  eventoEscolhaDireita: {fileID: 11400000, guid: ada6cc788d7886a4fbd6abd87f31b953, type: 2}

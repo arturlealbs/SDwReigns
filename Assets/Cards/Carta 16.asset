@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 16
+  m_EditorClassIdentifier: 
+  decisao: "Seu grupo intercepta uma transmiss\xE3o dos carcinus, mas o sinal \xE9
+    fraco. Um r\xE1dio de alta frequ\xEAncia pode amplificar, mas precisa ser alimentado
+    com a \xFAltima bateria de drones de patrulha."
+  textoEscolhaEsquerda: "Uso a bateria no r\xE1dio."
+  textoResultadoEsquerda: "Voc\xEA obt\xE9m informa\xE7\xF5es cruciais dos carcinus,
+    o que eleva muito a moral do grupo. No entanto, a energia dos drones \xE9 esgotada,
+    impactando sua capacidade de patrulha."
+  textoEscolhaDireita: "Preservo os drones para vig\xEDlia."
+  textoResultadoDireita: "A vigil\xE2ncia noturna \xE9 mantida, garantindo seguran\xE7a
+    e um pouco de energia. Contudo, a oportunidade de interceptar informa\xE7\xF5es
+    valiosas \xE9 perdida."
+  valoresEscolhaEsquerda: 00000000f6ffffff14000000f1ffffff
+  valoresEscolhaDireita: 0000000000000000f6ffffff0f000000

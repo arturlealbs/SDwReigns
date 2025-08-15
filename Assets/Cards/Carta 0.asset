@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca136e2c43b47642a6ed96359080894, type: 3}
+  m_Name: Carta 0
+  m_EditorClassIdentifier: 
+  decisao: "Durante uma travessia estrat\xE9gica pelo centro abandonado, sua tropa
+    encontra uma feira deserta no Mercado de S\xE3o Jos\xE9. No fundo, um dos barrac\xF5es
+    est\xE1 trancado e pode conter suprimentos. Arromb\xE1-lo  faria barulho, o que
+    pode atrair aten\xE7\xE3o dos carcinus infiltrados na \xE1rea."
+  textoEscolhaEsquerda: "Arrombamos o barrac\xE3o e enfrentamos o risco"
+  textoResultadoEsquerda: "Voc\xEAs decidem por arrombar o barrac\xE3o."
+  textoEscolhaDireita: "Recolhemos o que for poss\xEDvel entre os restos e seguimos
+    em sil\xEAncio."
+  textoResultadoDireita: "\xC9 melhor seguir caminho sem arriscar arrombar o barrac\xE3o."
+  valoresEscolhaEsquerda: fbffffff19000000f1ffffffecffffff
+  valoresEscolhaDireita: 0000000000000000000000000f000000
+  eventoEscolhaEsquerda: {fileID: 11400000, guid: 64f539e9b0784f94e8c6043dabed7895, type: 2}
+  eventoEscolhaDireita: {fileID: 11400000, guid: fa7cc22f83561284e8aab2f0c9c7e0b4, type: 2}
